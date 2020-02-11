@@ -38,10 +38,10 @@ def mainloop(answer: int):
     if answer == 2:
         player_text = 'Бумага'
 
-    if answer == value + 4 % 3:
+    if answer == (value + 4) % 3:
         bot_score_text.set(bot_score_text.get() + 1)
         result_label_text.set(player_text + ":" + bot_text + ".\nТы проиграл")
-    if answer == value + 2 % 3:
+    if answer == (value + 2) % 3:
         player_score_text.set(player_score_text.get() + 1)
         result_label_text.set(player_text + ":" + bot_text + ".\nТы победил")
     if answer == value:
